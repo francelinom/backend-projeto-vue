@@ -12,7 +12,7 @@ module.exports = app => {
     .post(app.api.category.save);
 
   app.route('/categories/tree')
-    .get(ap.api.category.getTree)
+    .get(app.api.category.getTree)
 
   app.route('/categories/:id')
     .get(app.api.category.getById)
