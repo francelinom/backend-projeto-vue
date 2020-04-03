@@ -1,10 +1,8 @@
+const {db} = require('./.env')
+
 module.exports = {
   client: "postgresql",
-  connection: {
-    database: "banco_vue",
-    user: "postgres",
-    password: "123456"
-  },
+  connection: db,
   pool: {
     min: 2,
     max: 10
