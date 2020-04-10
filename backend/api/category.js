@@ -69,7 +69,7 @@ module.exports = app => {
       return{ ...category, path}
     })
 
-    categoriesWhithPath.sort((a, b) =>{
+    categoriesWithPath.sort((a, b) =>{
       if(a.path < b.path) return -1
       if(a.path > b.path) return 1
       return 0
